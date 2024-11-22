@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Multimedia Elements Showcase</h1>
+
+    <!-- Canvas Section -->
+    <section>
+        <h2>Canvas Element</h2>
+        <canvas id="myCanvas" width="300" height="150"></canvas>
+        <script>
+            const canvas = document.getElementById('myCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'lightblue';
+            ctx.fillRect(10, 10, 280, 130);
+            ctx.fillStyle = 'black';
+            ctx.font = '20px Arial';
+            ctx.fillText('Hello Canvas!', 80, 80);
+        </script>
+    </section>
+
+    <!-- SVG Section -->
+    <section>
+        <h2>SVG Element</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="300" height="150">
+            <rect width="300" height="150" fill="lightgreen" />
+            <circle cx="150" cy="75" r="50" fill="orange" />
+            <text x="50" y="90" font-size="20" fill="black">Hello SVG!</text>
+        </svg>
+    </section>
+
+    <!-- Embed Section -->
+    <section>
+        <h2>Embed Element</h2>
+        <embed src="Afroz SQL.pdf" type="application/pdf" />
+    </section>
+
+    <!-- Iframe Section -->
+    <section>
+        <h2>Iframe Element</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/H1YR5rsScC8?si=0TzHKAOIYRPTgGvH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" frameborder="0"></iframe>
+    </section>
+
+    <!-- Object Section -->
+    <section>
+        <h2>Object Element</h2>
+        <object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf">
+            <p>Your browser does not support PDFs. <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">Download the PDF</a>.</p>
+        </object>
+    </section>
+</body>
+</html>

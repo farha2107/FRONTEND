@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Example</title>
+    <style>
+        .nospace {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Canvas Drawing Example</h1>
+    <canvas id="myCanvas" width="300" height="250"style="border:1px solid #000000;">Alternative text for canvas </canvas>
+
+    <script>
+        // Get the canvas element
+        const canvas = document.getElementById('myCanvas');
+        const context = canvas.getContext('2d');
+        context.beginPath();
+        context.arc(100, 200, 20, 0, Math.PI * 2, false);
+        context.fillStyle = 'orange';
+        context.fill();
+        context.closePath();
+
+        // Draw a rectangle
+        context.fillStyle = 'lightblue';
+        context.fillRect(50, 50, 200, 100);
+
+    </script><br>
+    <h1>SVG Drawing Example</h1>
+ 
+    <svg  style="border: 1px solid;">
+        <rect x="10" y="10" width="150" height="100" fill="lightblue" stroke="blue" stroke-width="2" />
+    </svg> 
+    <svg viewBox="0 0 50 50">
+       <polygon points="2,8 5,2 8,8" 
+                 fill="lightgreen" stroke="darkgreen" stroke-width="0.5">
+    </svg>
+    <h1>Embed Example</h1>
+    <embed src="Afroz SQL.pdf" type="application/pdf">
+</body>
+</html>
