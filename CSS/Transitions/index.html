@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Color Transition</title>
+  <style>
+     /* 1: Simple Color Change */
+    /* .box {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      transition: background-color 1s ease;
+    }
+
+    .box:hover {
+      background-color: coral;
+    } */
+    /* 2: Transitioning Multiple Properties */
+    /* .box {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      border-radius: 0;
+      transition: background-color 0.5s ease, border-radius 1s linear;
+    }
+
+    .box:hover {
+      background-color: coral;
+      border-radius: 50px;
+    } */
+    /*  3: Using transition with transform */
+    /* .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      transition: transform 0.5s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.5) rotate(45deg);
+    } */
+    /* 4: Timing Functions in Action */
+    /* .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 20px;
+    }
+
+    .ease {
+      transition: width 2s ease;
+    }
+
+    .linear {
+      transition: width 2s linear;
+    }
+
+    .ease-in {
+      transition: width 2s ease-in;
+    }
+
+    .ease-out {
+      transition: width 2s ease-out;
+    }
+
+    .box:hover {
+      width: 2000px;
+    } */
+    /* 5: Delay in Transition */
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      transition: background-color 1s ease, transform 2s 0.5s; /* 0.5s delay for transform */
+    }
+
+    .box:hover {
+      background-color: coral;
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+<body>
+    <!-- <div class="box"> Transition </div> -->
+    <div class="box ease">ease</div>
+    <div class="box linear">linear</div>
+    <div class="box ease-in">ease-in</div>
+    <div class="box ease-out">ease-out</div>
+</body>
+</html>
